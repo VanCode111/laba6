@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-CuOF+2SnTUfTwSZjCXf01h7uYhfOBuxIhGKPbfEJ3+FqH/s6cIFN9bGr1HmAg4fQ" crossorigin="anonymous">
+  <title>HTTP</title>
+</head>
+<body>
+  
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<div class="container">
+  <a class="navbar-brand" href="#">HTTP</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+ 
+
+   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="img/slide1.png" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/slide2.png" alt="Second slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  </a>
+</div>
+<!-- Modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Зарегистрируйтесь</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+        	<div class="form-group">
+		    <input type="email" class="form-control" id="exampleInputName" placeholder="Введите имя">
+		  </div>
+		  <div class="form-group mt-2">
+		    <input type="email" class="form-control" id="exampleInputEmail" placeholder="Введите email">
+		  </div>
+		  <div class="form-group mt-2">
+		    <input type="password" class="form-control" id="exampleInputPassword" placeholder="Введите пароль">
+		  </div>
+		  <div class="form-check mt-2">
+		    <input type="checkbox" class="form-check-input" id="exampleCheck">
+		    <label class="form-check-label" for="exampleCheck">Я принимаю соглашение</label>
+		  </div>
+		  <button type="submit" class="btn btn-primary mt-2" data-dismiss="modal">Зарегистрироваться</button>
+		</form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+
+
+  <main>
+    <div class="container my-5" id="http">
+      <div class="row">
+        <div class="col-md-6 col-sm-5 text-left">
+          <p class="my-3"><strong>Клиенты</strong> <br> Первоначально, протокол HTTP разрабатывался для доступа к гипертекстовым документам Всемирной паутины. Поэтому основными реализациями клиентов являются браузеры (агенты пользователя). Для просмотра сохранённого содержимого сайтов на компьютере без соединения с Интернетом, были придуманы офлайн-браузеры. При нестабильном соединении, для загрузки больших файлов используются менеджеры закачек; они позволяют в любое время докачать указанные файлы после потери соединения с веб-сервером. Некоторые виртуальные атласы (такие как Google Планета Земля и NASA World Wind) тоже используют HTTP.</p>
+        </div>
+        <div class="col-md-6 col-sm-5 text-left">
+          <p class="my-3"><strong>Структура</strong> <br> Основой HTTP является технология «клиент-сервер». HTTP в настоящее время повсеместно используется во Всемирной паутине для получения информации с веб-сайтов. В 2006 году в Северной Америке доля HTTP-трафика превысила долю P2P-сетей и составила 46%, из которых почти половина — это передача потокового видео и звука. HTTP — протокол прикладного уровня; аналогичными ему являются FTP и SMTP. Обмен сообщениями идёт по обыкновенной схеме «запрос-ответ». Для идентификации ресурсов HTTP использует глобальные URI. В отличие от многих других протоколов, HTTP не сохраняет своего состояния. Это означает отсутствие сохранения промежуточного состояния между парами «запрос-ответ».</p>
+        </div>
+      </div>
+    </div>
+   
+
+
+  <table class="table mt-5 text-left w-50 m-auto table-hover" id="table1">
+    <thead>
+      <tr>
+        <th>Версия</th>
+        <th>Описание</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>HTTP/0.9</td>
+        <td>HTTP был предложен в марте 1991 года Тимом Бернерсом-Ли, работавшим тогда в CERN, как механизм для доступа к документам в Интернете и облегчения навигации посредством использования гипертекста.</td>
+      </tr>
+      <tr>
+        <td>HTTP/1.0</td>
+        <td>В мае 1996 года для практической реализации HTTP был выпущен информационный документ RFC 1945, что послужило основой для реализации большинства компонентов HTTP/1.0.</td>
+      </tr>
+      <tr>
+        <td>HTTP/1.1</td>
+        <td>Современная версия протокола; принята в июне 1999 года. Новым в этой версии был режим «постоянного соединения»: TCP-соединение может оставаться открытым после отправки ответа на запрос, что позволяет посылать несколько запросов за одно соединение. Клиент теперь обязан посылать информацию об имени хоста, к которому он обращается, что сделало возможной более простую организацию виртуального хостинга.</td>
+      </tr>
+      <tr>
+        <td>HTTP/2</td>
+        <td>11 февраля 2015 года опубликованы финальные версии черновика следующей версии протокола. В отличие от предыдущих версий, протокол HTTP/2 является бинарным. Среди ключевых особенностей: мультиплексирование запросов, расстановка приоритетов для запросов, сжатие заголовков, загрузка нескольких элементов параллельно посредством одного TCP-соединения, поддержка проактивных push-уведомлений со стороны сервера.</td>
+      </tr>
+      <tr>
+        <td>HTTP/3</td>
+        <td>HTTP/3 – предлагаемый последователь HTTP/2, который уже используется в Веб на основе UDP вместо TCP в качестве транспортного протокола. Как и HTTP/2, он не объявляет устаревшими предыдущие основные версии протокола. Поддержка HTTP/3 была добавлена в Cloudflare и Google Chrome в сентябре 2019 года и может быть включена в стабильных версиях Chrome и Firefox.</td>
+      </tr>
+    </tbody>
+  </table>
+  <figure class="figure text-center d-flex justify-content-center flex-column align-items-center mt-5" id="image">
+  <img src="img/figure.png" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+  <figcaption class="figure-caption">HTTP</figcaption>
+</figure>
+  </main>
+<!-- JavaScript Bundle with Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-popRpmFF9JQgExhfw5tZT4I9/CI5e2QcuUZPOVXb1m7qUmeR2b50u+YFEYe1wgzy" crossorigin="anonymous"></script>
+</body>
+</html>
